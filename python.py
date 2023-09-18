@@ -19,7 +19,7 @@ Salida esperada: Para es_palindromo("Anita lava la tina"), la salida debería se
 
 '''
 
-# * ejercicio 1
+
 
 print()
 print('---------Ejercicio 1---------------')
@@ -47,7 +47,6 @@ resultado2 = ordenar_lista([5, 3, 2, 8, 6, 7])
 print(f'la lista ordenada en orden ascendente es : {resultado2}')
 
 
-# * ejercicio 2
 
 print()
 print('---------Ejercicio 2---------------')
@@ -72,7 +71,6 @@ def contar_palabras(cadena):
 
 contar_palabras("hola mundo hola todos")
 
-# * ejercicio 3
 
 print()
 print('---------Ejercicio 3---------------')
