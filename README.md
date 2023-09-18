@@ -9,7 +9,7 @@
 
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/b9fdbb74-fa5e-4f17-a7a2-94c9bd14a466)
 
-# **scraping:
+# **scraping:**
 
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/f63bfe9e-2e78-4000-a873-5549daec17df)
 
