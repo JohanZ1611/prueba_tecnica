@@ -35,35 +35,62 @@ soup = BeautifulSoup(html_obtenido, "html.parser")
 
 #* Ejercicio 1
 
-divs = soup.find_all('div', class_='detail-box')
-productos = []
-precios = []
+# divs = soup.find_all('div', class_='detail-box')
+# productos = []
+# precios = []
 
-for div in divs:
-  if (div.h6 is not None) and ('Patineta' in div.h5.text):
-    producto = div.h5.get_text(strip=True)
-    precio = div.h6.get_text(strip=True).replace('$', '')
-    if (int(precio ) < 68):
-        print(f'{producto:<18} | precio: {precio}')
-        productos.append(producto)
-        precios.append(precio)
+# for div in divs:
+#   if (div.h6 is not None) and ('Patineta' in div.h5.text):
+#     producto = div.h5.get_text(strip=True)
+#     precio = div.h6.get_text(strip=True).replace('$', '')
+#     if (int(precio ) < 68):
+#         print(f'{producto:<18} | precio: {precio}')
+#         productos.append(producto)
+#         precios.append(precio)
 
 #* Ejercicio 2
 
-divs = soup.find_all('div', class_='detail-box')
-productos = []
-precios = []
+# divs = soup.find_all('div', class_='detail-box')
+# productos = []
+# precios = []
 
-for div in divs:
-  if (div.h6 is not None) and ('Patineta' in div.h5.text):
-    producto = div.h5.get_text(strip=True)
-    precio = div.h6.get_text(strip=True).replace('$', '')
+# for div in divs:
+#   if (div.h6 is not None) and ('Patineta' in div.h5.text):
+#     producto = div.h5.get_text(strip=True)
+#     precio = div.h6.get_text(strip=True).replace('$', '')
 
-    if any(char.isdigit() and int(char) > 3 for char in producto.split() if char.isdigit()): 
-            #* se divide la cadena, luego se evalua que almenos contenga un digito y a esta misma se le hace la comparacion de que sea mayor a tres
-            print(f'{producto:<18} | precio: {precio}')
-            productos.append(producto)
-            precios.append(precio)
+#     if any(char.isdigit() and int(char) > 3 for char in producto.split() if char.isdigit()): 
+#             #* se divide la cadena, luego se evalua que almenos contenga un digito y a esta misma se le hace la comparacion de que sea mayor a tres
+#             print(f'{producto:<18} | precio: {precio}')
+#             productos.append(producto)
+#             precios.append(precio)
 
 #* Ejercicio 3
 
+divs = soup.find_all('div', class_='detail-box')
+clientes = []
+testimonios = []
+
+
+for div in divs:
+    if (div.h5 is not None) and ('Cliente' in div.h5.text):
+        cliente = div.h5.get_text(strip=True)
+        testimonio = div.p.get_text(strip=True)
+
+        clientes.append(cliente)
+        testimonios.append(testimonio)
+
+
+clientes.insert(0,'Clientes')
+testimonios.insert(0,'Testimonios')
+
+
+Archivo = dict(zip(clientes,testimonios))
+
+Archivo.items()
+
+import csv
+
+with open('Archio.csv','w') as A : 
+    w = csv.writer(A)
+    w.writerows(Archivo.items())
