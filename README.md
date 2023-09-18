@@ -1,6 +1,6 @@
 # prueba tecnica python y scraping
 
-# **python:
+# **python:**
 
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/710937a8-1cc1-4132-b3ce-885284053a90)
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/43748dba-0bca-46e5-a9e2-467cba3d167d)
