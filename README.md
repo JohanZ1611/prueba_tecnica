@@ -3,6 +3,9 @@
 # **python:
 
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/710937a8-1cc1-4132-b3ce-885284053a90)
+![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/43748dba-0bca-46e5-a9e2-467cba3d167d)
+![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/48273b59-0872-4500-af26-82964d5fcbdc)
+![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/30b41737-9af3-4071-b2dd-0192aa48287a)
 
 ![image](https://github.com/JohanZ1611/prueba_tecnica/assets/121687526/b9fdbb74-fa5e-4f17-a7a2-94c9bd14a466)
 
